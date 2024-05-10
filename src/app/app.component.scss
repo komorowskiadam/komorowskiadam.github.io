@@ -1,18 +1,1 @@
-.welcome-page {
-  min-width: 100vw;
-  min-height: 100vh;
-  background-image: url("./../assets/img/wave1.svg");
-  background-size: cover; /* Set the background image to cover the entire container */
-  background-position: bottom; /* Align the background image to the bottom */
-  background-repeat: repeat-x;
 
-  &__title {
-    color: white;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  img {
-    width: 15%;
-    height: auto;
-  }
-}
