@@ -1,12 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 export interface OpinionData {
-  name: string;
-  surname: string;
+  id: string;
   img: string;
-  company: string;
   rating: number;
-  opinion: string;
 }
 
 @Component({
@@ -19,6 +16,8 @@ export class OpinionComponent implements OnInit {
 
   starsArray: ('full' | 'half' | 'empty')[] = [];
 
+  prefix = '';
+
   ngOnInit(): void {
     const fullStars = Math.floor(this.data.rating);
     const halfStar = this.data.rating - fullStars >= 0.5;
@@ -28,5 +27,7 @@ export class OpinionComponent implements OnInit {
       .fill('full')
       .concat(halfStar ? ['half'] : [])
       .concat(Array(emptyStars).fill('empty'));
+
+    this.prefix = 'opinions.reviews.' + this.data.id + '.';
   }
 }

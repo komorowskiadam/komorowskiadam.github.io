@@ -1,17 +1,17 @@
 <div class="main-container">
   <div class="slide" id="s1">1 <a href="#s2">DUPA</a></div>
   <div class="slide" id="s2">
-    Skills
+    {{ "skills.title" | translate }}
 
     <app-skill-bar name="JS/TS" [skill]="80"></app-skill-bar>
     <app-skill-bar name="Angular" [skill]="60"></app-skill-bar>
     <app-skill-bar name="UI/UX" [skill]="10"></app-skill-bar>
   </div>
   <div class="slide" id="s3">
-    Opinions
+    {{ "opinions.title" | translate }}
 
     <div class="opinions">
-      @for (opinion of opinions; track opinion.name) {
+      @for (opinion of opinions; track opinion.id) {
       <app-opinion [data]="opinion"></app-opinion>
       }
     </div>

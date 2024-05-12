@@ -4,8 +4,10 @@
       <img [src]="data.img" />
     </div>
     <div class="opinion-container__header-details">
-      <p>{{ data.name }} {{ data.surname }}</p>
-      <p>{{ data.company }}</p>
+      <p>
+        {{ prefix + "name" | translate }} {{ prefix + "surname" | translate }}
+      </p>
+      <p>{{ prefix + "company" | translate }}</p>
       <div>
         @for(star of starsArray; track star) {
         <i
@@ -21,6 +23,6 @@
     </div>
   </div>
   <div class="opinion-container__content">
-    {{ data.opinion }}
+    {{ prefix + "opinion" | translate }}
   </div>
 </div>

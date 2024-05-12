@@ -9,29 +9,19 @@ import { OpinionData } from '../opinion/opinion.component';
 export class HomeComponent {
   opinions: OpinionData[] = [
     {
-      name: 'Elon',
-      surname: 'Musk',
+      id: 'id1',
       img: 'assets/img/elon_musk.jpg',
-      company: 'Tesla',
       rating: 4.5,
-      opinion: 'Awesome page!!!',
     },
     {
-      name: 'Taylor',
-      surname: 'Swift',
+      id: 'id2',
       img: 'assets/img/taylor_swift.jpg',
-      company: 'Singer',
       rating: 5,
-      opinion: 'OMG this page is so cuuute!',
     },
     {
-      name: 'Hammurabi',
-      surname: '',
+      id: 'id3',
       img: 'assets/img/hammurabi.jpg',
-      company: 'CEO of Babylon',
       rating: 4,
-      opinion:
-        'Dear Adam, this site pleases my eyes like an oasis in the desert. However, the site does not display correctly on clay tablets.',
     },
   ];
 }

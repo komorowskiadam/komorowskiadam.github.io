@@ -1,0 +1,28 @@
+{
+  "opinions": {
+    "title": "Opinions",
+    "reviews": {
+      "id1": {
+        "name": "Elon",
+        "surname": "Musk",
+        "company": "Tesla",
+        "opinion": "Awesome page!!!"
+      },
+      "id2": {
+        "name": "Taylor",
+        "surname": "Swift",
+        "company": "Singer",
+        "opinion": "OMG this page is so cuuute!"
+      },
+      "id3": {
+        "name": "Hammurabi",
+        "surname": "",
+        "company": "King of Babylon",
+        "opinion": "Dear Adam, this site pleases my eyes like an oasis in the desert. However, the site does not display correctly on clay tablets."
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills"
+  }
+}
