@@ -1,0 +1,26 @@
+<div *ngIf="data" class="opinion-container">
+  <div class="opinion-container__header">
+    <div class="profile-photo">
+      <img [src]="data.img" />
+    </div>
+    <div class="opinion-container__header-details">
+      <p>{{ data.name }} {{ data.surname }}</p>
+      <p>{{ data.company }}</p>
+      <div>
+        <span *ngFor="let star of starsArray; let i = index">
+          <i
+            class="fa"
+            [ngClass]="{
+              'fa-star': star === 'full',
+              'fa-star-half': star === 'half',
+              'fa-star-o': star === 'empty'
+            }"
+          ></i>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="opinion-container__content">
+    {{ data.opinion }}
+  </div>
+</div>

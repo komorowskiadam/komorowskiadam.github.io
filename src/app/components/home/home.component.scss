@@ -24,3 +24,16 @@
   display: flex;
   flex-direction: column;
 }
+
+#s3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.opinions {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  overflow-x: scroll;
+}
