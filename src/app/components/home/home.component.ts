@@ -31,7 +31,7 @@ export class HomeComponent {
       company: 'CEO of Babylon',
       rating: 4,
       opinion:
-        'Dear Adam, this site pleases my eyes like an oasis in the desert. however, the site does not display correctly on clay tablets.',
+        'Dear Adam, this site pleases my eyes like an oasis in the desert. However, the site does not display correctly on clay tablets.',
     },
   ];
 }
