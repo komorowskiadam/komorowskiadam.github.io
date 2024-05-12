@@ -11,9 +11,9 @@
     Opinions
 
     <div class="opinions">
-      <ng-container *ngFor="let opinion of opinions">
-        <app-opinion [data]="opinion"></app-opinion>
-      </ng-container>
+      @for (opinion of opinions; track opinion.name) {
+      <app-opinion [data]="opinion"></app-opinion>
+      }
     </div>
   </div>
 </div>
