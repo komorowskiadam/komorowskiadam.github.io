@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { SkillBarComponent } from './components/skill-bar/skill-bar.component';
 import { OpinionComponent } from './components/opinion/opinion.component';
+import { Screen1Component } from "./components/screens/screen1/screen1.component";
 
 @NgModule({
   declarations: [
@@ -16,19 +17,20 @@ import { OpinionComponent } from './components/opinion/opinion.component';
     HomeComponent,
     SkillBarComponent,
     OpinionComponent,
+    Screen1Component,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient],
-      },
-    }),
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient],
+            },
+        }),
+    ],
   providers: [],
   bootstrap: [AppComponent],
 })
