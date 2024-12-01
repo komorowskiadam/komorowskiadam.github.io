@@ -36,21 +36,21 @@ export default {
           title: "System zarządzania wydarzeniami masowymi",
           description:
             "System składa się z aplikacja webowa do zarządzania wydarzeniami (Angular), mobilnej aplikacji dla uczestników (Flutter) oraz API (Java SpringBoot).",
-          image: "/src/assets/koncert.png",
+          image: new URL("@/assets/koncert.png", import.meta.url).href,
           link: "https://github.com/komorowskiadam/inzynierka",
         },
         {
           title: "Gra MMORPG",
           description:
             "Będąca w fazie rozwoju przeglądarkowa unikalna gra MMORPG. Więcej informacji wkrótce!",
-          image: "/src/assets/question-marks.avif",
+          image: new URL("@/assets/question-marks.avif", import.meta.url).href,
           link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         },
         {
           title: "Aplikacja CyberSenior",
           description:
             "Mobilna aplikacja dla Seniorów, zawierająca kursy oraz narzędzia umożliwiające bezpieczne korzystanie z sieci.",
-          image: "/src/assets/security.jpg",
+          image: new URL("@/assets/security.jpg", import.meta.url).href,
           link: "https://github.com/komorowskiadam/cybersecurity-app",
         },
       ],
