@@ -29,7 +29,7 @@ export default {
       skills: [
         {
           name: "TypeScript",
-          icon: new URL("@/assets/icons/koncert.svg", import.meta.url).href,
+          icon: new URL("@/assets/icons/typescript.svg", import.meta.url).href,
         },
         {
           name: "Vue.js",
