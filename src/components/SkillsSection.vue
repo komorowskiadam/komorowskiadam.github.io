@@ -27,16 +27,37 @@ export default {
   data() {
     return {
       skills: [
-        { name: "TypeScript", icon: "/src/assets/icons/typescript.svg" },
-        { name: "Vue.js", icon: "/src/assets/icons/vue.svg" },
-        { name: "Angular", icon: "/src/assets/icons/angular.svg" },
-        { name: "Node.js", icon: "/src/assets/icons/node.svg" },
-        { name: "Java", icon: "/src/assets/icons/java.svg" },
-        { name: "Python", icon: "/src/assets/icons/python.svg" },
-        { name: "Flutter", icon: "/src/assets/icons/flutter.svg" },
+        {
+          name: "TypeScript",
+          icon: new URL("@/assets/icons/koncert.svg", import.meta.url).href,
+        },
+        {
+          name: "Vue.js",
+          icon: new URL("@/assets/icons/vue.svg", import.meta.url).href,
+        },
+        {
+          name: "Angular",
+          icon: new URL("@/assets/icons/angular.svg", import.meta.url).href,
+        },
+        {
+          name: "Node.js",
+          icon: new URL("@/assets/icons/node.svg", import.meta.url).href,
+        },
+        {
+          name: "Java",
+          icon: new URL("@/assets/icons/java.svg", import.meta.url).href,
+        },
+        {
+          name: "Python",
+          icon: new URL("@/assets/icons/python.svg", import.meta.url).href,
+        },
+        {
+          name: "Flutter",
+          icon: new URL("@/assets/icons/flutter.svg", import.meta.url).href,
+        },
         {
           name: "AI, Machine learning, Deep learning",
-          icon: "/src/assets/icons/robot-ai.svg",
+          icon: new URL("@/assets/icons/robot-ai.svg", import.meta.url).href,
         },
       ],
     };
