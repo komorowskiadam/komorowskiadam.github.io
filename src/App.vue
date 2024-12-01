@@ -4,22 +4,22 @@
       <h1 class="text-4xl font-bold">Adam Komorowski</h1>
       <nav v-if="!isMobile">
         <a
-          href="#about"
+          @click="scrollTo('#about')"
           class="hover:bg-gradient-to-r from-primary to-secondary hover:text-white p-2 rounded"
           >O mnie</a
         >
         <a
-          href="#projects"
+          @click="scrollTo('#projects')"
           class="hover:bg-gradient-to-r from-primary to-secondary hover:text-white p-2 rounded"
           >Projekty</a
         >
         <a
-          href="#skills"
+          @click="scrollTo('#skills')"
           class="hover:bg-gradient-to-r from-primary to-secondary hover:text-white p-2 rounded"
           >Umiejętności</a
         >
         <a
-          href="#contact"
+          @click="scrollTo('#contact')"
           class="hover:bg-gradient-to-r from-primary to-secondary hover:text-white p-2 rounded"
           >Kontakt</a
         >
@@ -40,6 +40,7 @@ import HeroSection from "./components/HeroSection.vue";
 import ProjectsSection from "./components/ProjectsSection.vue";
 import SkillsSection from "./components/SkillsSection.vue";
 import ContactSection from "./components/ContactSection.vue";
+import { gsap } from "gsap";
 
 function isMobileDevice() {
   return /Mobi|Android/i.test(navigator.userAgent);
@@ -56,6 +57,15 @@ export default {
     return {
       isMobile: isMobileDevice(),
     };
+  },
+  methods: {
+    scrollTo(section: string) {
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: section,
+        ease: "power2.inOut",
+      });
+    },
   },
 };
 </script>
